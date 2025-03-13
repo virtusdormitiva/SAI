@@ -439,3 +439,8 @@ impl Course {
         let stats = rows.into_iter()
             .map(|row| (row.academic_year, row.count.unwrap_or(0)))
 
+            .collect();
+
+        Ok(stats)
+    }
+}
