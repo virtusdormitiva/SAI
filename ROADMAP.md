@@ -1,3 +1,137 @@
+# SAI - Sistema Administrativo Integral
+
+## Development Roadmap
+
+This document outlines the development plans, milestones, and progress for the SAI (Sistema Administrativo Integral) project. It serves as a living document that will be updated as development progresses, ensuring all stakeholders have visibility into the project's status and trajectory.
+
+### Purpose
+
+The roadmap aims to:
+- Document completed milestones and implementations
+- Track current development status
+- Plan future development phases with target completion dates
+- Establish clear goals and expectations
+- Facilitate communication between team members and stakeholders
+
+---
+
+## Development Progress Overview
+
+Current Project Completion: **20%**
+
+```
+[██████████                                                ] 20%
+```
+
+---
+
+## Completed Items ✅
+
+### Infrastructure Setup (Completed Q4 2024)
+- [x] Repository initialization
+- [x] Project structure configuration
+- [x] CI/CD pipeline setup
+- [x] Docker containerization implementation
+- [x] Development environment configuration
+- [x] PostgreSQL database schema design
+
+### Initial Documentation (Completed Q4 2024)
+- [x] Basic README.md
+- [x] API documentation
+- [x] Database schema documentation
+
+### Core Module Implementation (In Progress)
+- [x] Implementation of basic module structure
+- [x] Definition of main data entities
+  - [x] User model
+  - [x] Student model
+  - [x] Teacher model
+  - [x] Course model
+- [x] **Courses API Implementation** (Completed: _Today's Date_)
+  - [x] CRUD operations for courses
+  - [x] Course statistics by academic year
+  - [x] Teacher assignment endpoints
+  - [x] Course filtering by academic year and grade level
+
+---
+
+## Current Status 🔄
+
+### Core Module Implementation (20% Complete)
+- [x] Courses routes and services implementation
+- [ ] Students routes and services implementation
+- [ ] Teachers routes and services implementation
+- [ ] Users and authentication services
+- [ ] Admin dashboard core functionality
+
+### Database Development
+- [x] Initial schema design
+- [x] Core tables implementation
+- [ ] Relationships and constraints
+- [ ] Data migration tools
+- [ ] Backup and recovery procedures
+
+---
+
+## Future Development 🚀
+
+### Phase 1: Core Administrative Module (Q2 2025)
+- [ ] Complete user authentication and authorization
+- [ ] Role-based access control
+- [ ] Admin dashboard completion
+- [ ] Reporting functionality (basic)
+- [ ] Student enrollment processes
+- [ ] Teacher assignment workflow
+
+### Phase 2: Academic Module (Q3 2025)
+- [ ] Grade management
+- [ ] Attendance tracking
+- [ ] Curriculum management
+- [ ] Academic calendar
+- [ ] Parent portal (basic)
+- [ ] Student performance analytics
+
+### Phase 3: Financial Module (Q4 2025)
+- [ ] Tuition management
+- [ ] Payment processing
+- [ ] Financial reporting
+- [ ] Budget planning tools
+- [ ] Scholarship management
+- [ ] Expense tracking
+
+### Phase 4: Advanced Features (Q1 2026)
+- [ ] Advanced analytics dashboard
+- [ ] Machine learning for student performance prediction
+- [ ] Mobile application
+- [ ] API gateway for third-party integrations
+- [ ] Multi-institution support
+- [ ] Localization for international deployment
+
+### Phase 5: System Optimization (Q2 2026)
+- [ ] Performance optimization
+- [ ] Scalability improvements
+- [ ] Security enhancements
+- [ ] Comprehensive documentation
+- [ ] User training materials
+- [ ] System maintenance tools
+
+---
+
+## Maintenance & Support Plan
+
+Following the completion of all development phases:
+- Quarterly security updates
+- Bi-annual feature enhancements
+- Annual infrastructure review
+- Ongoing technical support
+- User feedback collection and implementation
+
+---
+
+*This roadmap is subject to change based on evolving requirements, technological advances, and stakeholder feedback.*
+
+*Last Updated: Today's Date*
+
 # Roadmap del Sistema Administrativo Integral (SAI) del Anglo
 
 Este documento describe el plan de desarrollo del Sistema Administrativo Integral (SAI), estructurado en fases y sprints con objetivos claros y plazos estimados. Las fechas proporcionadas representan un cronograma optimista basado en el progreso actual del equipo.
