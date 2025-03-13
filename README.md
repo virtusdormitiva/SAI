@@ -181,7 +181,7 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## 📞 Contacto
 
-Para preguntas o soporte, contacta al equipo de desarrollo en [desarrollo@anglo.edu.py](mailto:desarrollo@anglo.edu.py).
+Para preguntas o soporte, contacta al equipo de desarrollo en [desarrollo@anglo.edu.py](mailto:favaratoraphael@gmail.com).
 
 ---
 
