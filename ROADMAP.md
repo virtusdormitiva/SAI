@@ -2,9 +2,9 @@
 
 Este documento describe el plan de desarrollo del Sistema Administrativo Integral (SAI), estructurado en fases y sprints con objetivos claros y plazos estimados. Las fechas proporcionadas representan un cronograma optimista basado en el progreso actual del equipo.
 
-## Estado Actual del Proyecto (Actualizado: Junio 2024)
+## Estado Actual del Proyecto (Actualizado: Marzo 2025)
 
-**Progreso General:** 15% completado
+**Progreso General:** 20% completado
 
 ### Elementos Completados:
 - ✅ Estructura base del proyecto con Cargo
@@ -15,11 +15,13 @@ Este documento describe el plan de desarrollo del Sistema Administrativo Integra
 - ✅ Dockerización básica (Dockerfile y docker-compose.yml)
 - ✅ Módulos principales definidos (models, routes, services, utils)
 - ✅ Esquema de proyecto adaptado a normativas paraguayas
+- ✅ Configuración del repositorio en GitHub
 
 ### En Progreso:
 - 🔄 Implementación de la estructura básica de módulos
 - 🔄 Definición de entidades de datos principales
 - 🔄 Configuración de la base de datos PostgreSQL
+- 🔄 Implementación del primer conjunto de funcionalidades del sistema
 
 ## Visión General
 
@@ -177,7 +179,7 @@ Este roadmap está sujeto a ajustes según las necesidades emergentes del proyec
 
 ---
 
-**Última actualización**: Junio 2024  
+**Última actualización**: Marzo 2025  
 **Tiempo total estimado de desarrollo**: 4.5 meses (mediados de Julio - mediados de Noviembre 2024)
 
 ---
