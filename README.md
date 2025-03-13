@@ -7,6 +7,10 @@
 [![WebAssembly](https://img.shields.io/badge/WebAssembly-Compatible-5849be)](https://webassembly.org/)
 [![Progreso](https://img.shields.io/badge/Progreso-25%25-informational)](ROADMAP.md)
 
+## 📄 Propuesta Comercial
+
+Consulte nuestra [Propuesta Comercial](PROPUESTA.md) detallada para conocer cómo SAI puede transformar la gestión administrativa de su institución educativa, incluyendo nuestro plan de implementación, beneficios competitivos, y proceso de migración de datos.
+
 ## 📋 Descripción del Proyecto
 
 El Sistema Administrativo Integral (SAI) es una plataforma desarrollada en Rust diseñada para gestionar de manera eficiente todos los procesos administrativos institucionales. Esta solución integral combina seguridad, rendimiento y adaptabilidad a las normativas paraguayas para ofrecer una experiencia completa de gestión institucional.
