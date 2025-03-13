@@ -242,9 +242,9 @@ Ofrecemos un modelo de precios transparente y adaptable a diferentes tamaños de
 
 | Componente | Descripción | Costo |
 |------------|-------------|-------|
-| **Licencia Base** | Incluye módulos core y académicos básicos | Desde Gs. 25.000.000 |
-| **Módulos Adicionales** | Personalización según necesidades | Gs. 5.000.000 - 15.000.000 c/u |
-| **Servicios de Implementación** | Migración, configuración, capacitación | Gs. 15.000.000 - 30.000.000 |
+| **Licencia Base** | Incluye módulos core y académicos básicos | Desde Gs. 40.000.000 |
+| **Módulos Adicionales** | Personalización según necesidades | Gs. 10.000.000 - 20.000.000 c/u |
+| **Servicios de Implementación** | Migración, configuración, capacitación | Gs. 20.000.000 - 45.000.000 |
 | **Mantenimiento Anual** | Soporte técnico, actualizaciones, mejoras | 15% del valor de licencia |
 
 ### Opciones de Contratación:
