@@ -5,7 +5,7 @@
 [![Rust](https://img.shields.io/badge/Rust-1.76+-orange)](https://www.rust-lang.org/)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-yellow)](LICENSE)
 [![WebAssembly](https://img.shields.io/badge/WebAssembly-Compatible-5849be)](https://webassembly.org/)
-[![Progreso](https://img.shields.io/badge/Progreso-25%25-informational)](ROADMAP.md)
+[![Progreso](https://img.shields.io/badge/Progreso-35%25-informational)](ROADMAP.md)
 
 ## 📄 Propuesta Comercial
 
@@ -25,7 +25,7 @@ El Sistema Administrativo Integral (SAI) es una plataforma desarrollada en Rust 
 
 ## 🔍 Estado Actual del Proyecto (Marzo 2025)
 
-> **Progreso General: 25%**
+> **Progreso General: 35%**
 
 ### Estructura Implementada
 
@@ -53,6 +53,9 @@ SAI/
 - 🔄 **Modelos de Datos**: Principales entidades definidas (70%)
 - 🔄 **API Core**: Endpoints básicos implementados (45%)
 - ✅ **API de Cursos**: CRUD completo y estadísticas por año académico
+- ✅ **API de Estudiantes**: CRUD completo y gestión de registros académicos
+- ✅ **API de Profesores**: CRUD completo y asignación de cursos
+- ✅ **API de Usuarios**: CRUD completo y gestión de perfiles
 - 🔄 **Autenticación**: Sistema de login y permisos (40%)
 
 ### Próximas Etapas

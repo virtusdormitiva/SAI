@@ -17,10 +17,10 @@ The roadmap aims to:
 
 ## Development Progress Overview
 
-Current Project Completion: **20%**
+Current Project Completion: **35%**
 
 ```
-[██████████                                                ] 20%
+[█████████████████                                           ] 35%
 ```
 
 ---
@@ -57,11 +57,11 @@ Current Project Completion: **20%**
 
 ## Current Status 🔄
 
-### Core Module Implementation (20% Complete)
+### Core Module Implementation (35% Complete)
 - [x] Courses routes and services implementation
-- [ ] Students routes and services implementation
-- [ ] Teachers routes and services implementation
-- [ ] Users and authentication services
+- [x] Students routes and services implementation
+- [x] Teachers routes and services implementation
+- [x] Users and authentication services
 - [ ] Admin dashboard core functionality
 
 ### Database Development
@@ -130,7 +130,7 @@ Following the completion of all development phases:
 
 *This roadmap is subject to change based on evolving requirements, technological advances, and stakeholder feedback.*
 
-*Last Updated: Today's Date*
+*Last Updated: March 18, 2025*
 
 # Roadmap del Sistema Administrativo Integral (SAI) del Anglo
 
@@ -138,7 +138,7 @@ Este documento describe el plan de desarrollo del Sistema Administrativo Integra
 
 ## Estado Actual del Proyecto (Actualizado: Marzo 2025)
 
-**Progreso General:** 20% completado
+**Progreso General:** 35% completado
 
 ### Elementos Completados:
 - ✅ Estructura base del proyecto con Cargo
@@ -313,7 +313,7 @@ Este roadmap está sujeto a ajustes según las necesidades emergentes del proyec
 
 ---
 
-**Última actualización**: Marzo 2025  
+**Última actualización**: Marzo 18, 2025  
 **Tiempo total estimado de desarrollo**: 4.5 meses (mediados de Julio - mediados de Noviembre 2024)
 
 ---

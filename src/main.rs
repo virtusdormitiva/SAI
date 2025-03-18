@@ -74,8 +74,9 @@ async fn main() -> std::io::Result<()> {
             // Configuración de rutas básicas
             .route("/", web::get().to(index))
             .route("/health", web::get().to(health_check))
-            // Aquí se podrían agregar más rutas y servicios
-            // Ejemplo: .service(web::scope("/api").configure(routes::api_routes))
+            // Register API routes
+            .service(routes::configure())
+            .service(routes::configure_system_routes())
     })
     .bind(&server_url)?
     .run()
