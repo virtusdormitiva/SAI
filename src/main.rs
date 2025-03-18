@@ -1,15 +1,14 @@
 use actix_web::{web, App, HttpServer, HttpResponse, Responder};
 use dotenv::dotenv;
 use std::env;
-use sqlx::{PgPool, postgres::PgPoolOptions};
 use log::{info, error};
 
 // Importamos nuestra biblioteca sai
-use sai::{models, routes, services, utils};
+use sai::{models, routes, services, utils, db};
 
 // Estructura para configuración de la aplicación
 struct AppState {
-    db_pool: PgPool,
+    db_pool: db::DbPool,
 }
 
 // Manejador simple para la ruta principal
@@ -19,8 +18,10 @@ async fn index() -> impl Responder {
 
 // Manejador para verificar el estado del servidor
 async fn health_check(data: web::Data<AppState>) -> impl Responder {
-    // Intentamos hacer una consulta simple para verificar la conexión a la base de datos
-    match sqlx::query("SELECT 1").execute(&data.db_pool).await {
+    // Usamos el método de verificación de conexión de nuestro módulo db
+    match db::helpers::transaction(&data.db_pool, |_tx| Box::pin(async { 
+        Ok::<_, sqlx::Error>(sqlx::query("SELECT 1").execute(&data.db_pool).await?)
+    })).await {
         Ok(_) => HttpResponse::Ok().body("¡El servidor está en funcionamiento y conectado a la base de datos!"),
         Err(e) => {
             error!("Error al verificar la conexión a la base de datos: {}", e);
@@ -38,24 +39,9 @@ async fn main() -> std::io::Result<()> {
     // Inicializar el logger
     env_logger::init_from_env(env_logger::Env::default().default_filter_or("info"));
     
-    // Obtener la URL de la base de datos desde las variables de entorno
-    let database_url = env::var("DATABASE_URL")
-        .expect("DATABASE_URL must be set in .env file");
-    
-    // Configuración del pool de conexiones a la base de datos
-    let pool = match PgPoolOptions::new()
-        .max_connections(10)
-        .connect(&database_url)
-        .await {
-            Ok(pool) => {
-                info!("Conexión exitosa a la base de datos");
-                pool
-            },
-            Err(e) => {
-                error!("Error al conectar a la base de datos: {}", e);
-                panic!("No se pudo establecer conexión con la base de datos");
-            }
-        };
+    // Inicializar la conexión a la base de datos usando nuestro módulo db
+    // Esto incluye verificación de conexión e inicialización del esquema si es necesario
+    let pool = db::initialize_db().await;
     
     // Dirección del servidor
     let host = env::var("HOST").unwrap_or_else(|_| "127.0.0.1".to_string());
@@ -74,9 +60,14 @@ async fn main() -> std::io::Result<()> {
             // Configuración de rutas básicas
             .route("/", web::get().to(index))
             .route("/health", web::get().to(health_check))
-            // Register API routes
-            .service(routes::configure())
-            .service(routes::configure_system_routes())
+            // Register API routes with database pool available to all routes
+            .service(web::scope("")
+                .app_data(web::Data::clone(&web::Data::new(AppState {
+                    db_pool: pool.clone(),
+                })))
+                .service(routes::configure())
+                .service(routes::configure_system_routes())
+            )
     })
     .bind(&server_url)?
     .run()

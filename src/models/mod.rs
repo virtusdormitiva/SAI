@@ -15,8 +15,10 @@ pub mod course;
 pub mod enrollment;
 pub mod attendance;
 pub mod grade;
+pub mod assessment;
 pub mod payment;
 pub mod institution;
+pub mod authentication;
 
 // Re-exportaciones para facilitar el acceso
 pub use user::User;
@@ -26,8 +28,10 @@ pub use course::Course;
 pub use enrollment::Enrollment;
 pub use attendance::Attendance;
 pub use grade::Grade;
+pub use assessment::Assessment;
 pub use payment::Payment;
 pub use institution::Institution;
+pub use authentication::Authentication;
 
 /// Enumeración que representa los diferentes roles de usuario en el sistema
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]

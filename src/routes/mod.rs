@@ -13,6 +13,7 @@ mod grades;
 mod schedules;
 mod reports;
 mod auth;
+mod admin;
 
 /// Configure all API routes
 pub fn configure() -> Scope {
@@ -26,6 +27,7 @@ pub fn configure() -> Scope {
         .service(grades::routes())
         .service(schedules::routes())
         .service(reports::routes())
+        .service(admin::routes())
 }
 
 /// Configure health check and system status routes
