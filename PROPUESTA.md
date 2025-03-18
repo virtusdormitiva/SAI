@@ -322,8 +322,8 @@ Estamos convencidos de que SAI no solo cumplirá con sus expectativas actuales, 
 **Equipo SAI**  
 Dirección: Avda. Sacramento 123, Asunción  
 Teléfono: +595 21 555-1234  
-Email: info@sai-sistemas.com.py  
-Web: www.sai-sistemas.com.py
+Email: favaratoraphael@gmail.com  
+Web: en desarrollo
 
 ---
 
